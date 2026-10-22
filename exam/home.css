@@ -15,7 +15,7 @@
       animation: fadeIn 1s ease 1.5s forwards;
     }
 
-    /* ---------------- LOADING SCREEN ---------------- */
+   
     #loading-animation {
       position: fixed;
       top: 0;
@@ -84,7 +84,6 @@
       to { opacity: 1; }
     }N
 
-    /* ---------------- MAIN TITLE ---------------- */
     h1 {
       text-align: center;
       font-size: 3vw;
@@ -121,7 +120,6 @@
     background 0.4s ease;
 }
 
-/* Hover effect */
 .exam-btn:hover {
   background: #f0f4ff;
   color: #004e92;
@@ -131,7 +129,7 @@
   transform: scale(1.5,1.5);
 }
 
-/* Optional subtle glow pulse on hover */
+
 .exam-btn:hover::after {
   content: "";
   position: absolute;
@@ -143,13 +141,12 @@
   pointer-events: none;
 }
 
-/* Glow pulse animation */
+
 @keyframes glowPulse {
   0%, 100% { opacity: 0; }
   50% { opacity: 1; }
 }
 
-    /* ---------------- EXAM PANEL ---------------- */
     #exam-panel {
       position: fixed;
       top: 0;
@@ -209,7 +206,6 @@
       margin: 0.5em 0;
     }
 
-    /* Buttons inside panel */
     #submit-btn, #close-btn {
       width: 100%;
       padding: 1em;
@@ -238,7 +234,6 @@
       background: #d8352b;
     }
 
-    /* ---------------- RESULT OVERLAY ---------------- */
     #result-overlay {
       position: fixed;
       top: 0;
@@ -289,7 +284,6 @@
       background: #45a049;
     }
 
-    /* ---------------- RESPONSIVE ---------------- */
     @media (max-width: 768px) {
       h1 {
         font-size: 6vw;
@@ -315,7 +309,6 @@
         font-size: 5vw;
       }
     }
-  /* Gradient background animation */
   @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -342,7 +335,6 @@
     animation: float 10s ease-in-out infinite;
   }
 
-  /* Ball randomization */
   .ball:nth-child(1) { width: 2vw; height: 2vw; top: 10%; left: 15%; animation-duration: 12s; animation-delay: 0s; }
   .ball:nth-child(2) { width: 3vw; height: 3vw; top: 70%; left: 25%; animation-duration: 10s; animation-delay: 2s; }
   .ball:nth-child(3) { width: 1.5vw; height: 1.5vw; top: 40%; left: 60%; animation-duration: 8s; animation-delay: 1s; }
@@ -382,7 +374,6 @@
       filter: blur(0.1vw);
     }
   }
-/* Title container */
 #title {
   display: flex;
   justify-content: center;
@@ -396,7 +387,6 @@
   box-sizing: border-box;
 }
 
-/* Animated letters */
 .txt1 {
   display: inline-block;
   animation: waveGlow 2.8s ease-in-out infinite;
@@ -406,7 +396,6 @@
     animation-play-state: paused;
 }
 
-/* Wave + Glow + Color Shift Animation */
 @keyframes waveGlow {
   0%, 100% {
     transform: translateY(0) scale(1);
@@ -434,7 +423,6 @@
   }
 }
 
-/* Stagger each letter for wave timing */
 .txt1:nth-child(1) { animation-delay: 0s; }
 .txt1:nth-child(2) { animation-delay: 0.2s; }
 .txt1:nth-child(3) { animation-delay: 0.4s; }
@@ -444,14 +432,12 @@
 .txt1:nth-child(7) { animation-delay: 1.2s; }
 .txt1:nth-child(8) { animation-delay: 1.4s; }
 
-/* Mobile fine-tuning */
 @media (max-width: 600px) {
   #title {
     font-size: clamp(2.2rem, 5vw, 2.5rem);
     letter-spacing: 0.1em;
   }
 }
-/* Highlight wrong and correct answers */
 .question.correct {
   border-left: 5px solid #4CAF50;
   background: #eaffea;
@@ -479,7 +465,6 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ---------- DARK MODE ---------- */
 body.dark {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #f1f1f1;
@@ -546,7 +531,6 @@ body.dark #result-box button:hover {
   background: #1976d2;
 }
 
-/* Dark mode toggle button */
 #dark-toggle {
   position: fixed;
   top: 15px;
