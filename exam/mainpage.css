@@ -17,7 +17,6 @@ body {
   position: relative;
 }
 
-/* ---------------- LOADING SCREEN ---------------- */
 #loading-animation {
   position: fixed;
   top: 0;
@@ -85,7 +84,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
   to { opacity: 1; }
 }
 
-/* ---------------- ANIMATED BACKGROUND ---------------- */
 .animated-bg {
   position: absolute;
   top: 0;
@@ -105,7 +103,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
   100% { background-position: 0% 50%; }
 }
 
-/* ---------------- FLOATING SHAPES ---------------- */
 .floating-shapes {
   position: absolute;
   top: 0;
@@ -177,8 +174,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
     transform: translateY(-10vh) rotate(360deg);
   }
 }
-
-/* ---------------- PROFILE ---------------- */
 #profile-img {
   width: 25vw;
   height: 25vw;
@@ -200,7 +195,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
   }
 }
 
-/* ---------------- DATA SECTION ---------------- */
 #data {
   display: flex;
   flex-direction: column;
@@ -234,7 +228,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
   cursor: pointer;
 }
 
-/* ---------------- TITLE ---------------- */
 #title {
   font-size: 2vw;
   color: #fff;
@@ -247,8 +240,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
   from { text-shadow: 0 0 10px #fff; }
   to { text-shadow: 0 0 25px #ffb6b9, 0 0 35px #89f7fe; }
 }
-
-/* ---------------- BUTTONS ---------------- */
 #buttons {
   display: flex;
   gap: 1.5vw;
@@ -275,7 +266,6 @@ h1#txt span:nth-child(4) { animation-delay: 0.8s; }
   box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.3);
 }
 
-/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1024px) {
   #profile-img {
     width: 30vw;
